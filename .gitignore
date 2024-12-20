@@ -1,0 +1,26 @@
+# Dependencies
+/vendor/
+composer.lock
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Images uploads
+/assets/images/uploads/
+
+# Cache
+*.cache
+
+# MongoDB data
+/data/
+
+# System files
+.DS_Store
+Thumbs.db 

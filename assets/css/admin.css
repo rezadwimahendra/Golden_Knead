@@ -1,0 +1,279 @@
+:root {
+  --primary-color: #9ac1f0;
+  --secondary-color: #72fa93;
+  --accent-color: #f6c445;
+  --tertiary-color: #e45f2b;
+  --soft-color: #a0e548;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d7e3ec 100%);
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, var(--primary-color), var(--soft-color)) !important;
+  padding: 15px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  padding: 10px 20px !important;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link i {
+  font-size: 1.2em;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Page Title */
+.page-title {
+  color: var(--tertiary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  background: white;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--soft-color));
+  color: white;
+  padding: 20px 25px;
+  border: none;
+}
+
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Tables */
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 600;
+  color: var(--tertiary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding: 15px;
+}
+
+.table td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+/* Buttons */
+.btn-action {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  margin: 0 5px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--soft-color));
+  border: none;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--secondary-color), var(--soft-color));
+  border: none;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, var(--accent-color), #ffd700);
+  border: none;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
+  border: none;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+.form-label {
+  color: var(--tertiary-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(154, 193, 240, 0.1);
+  border-color: var(--primary-color);
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-menunggu {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+.status-diproses {
+  background-color: #b8daff;
+  color: #004085;
+}
+
+.status-selesai {
+  background-color: #c3e6cb;
+  color: #155724;
+}
+
+.status-dibatalkan {
+  background-color: #f5c6cb;
+  color: #721c24;
+}
+
+/* Tambah status untuk produk */
+.status-tersedia {
+  background-color: #c3e6cb;
+  color: #155724;
+}
+
+.status-tidak {
+  background-color: #f5c6cb;
+  color: #721c24;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+
+  .nav-link {
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 12px;
+  }
+
+  .btn-action {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .status-badge {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  .btn-action {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+}
